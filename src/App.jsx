@@ -1,25 +1,20 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-
+import { Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation.jsx";
+import Home from "./pages/Home.jsx";
+import Students from "./pages/Students.jsx";
+import About from "./pages/About.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
-
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
-
-     
+    <div>
+      <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/students" element={<Students />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 }
-
 
 export default App;

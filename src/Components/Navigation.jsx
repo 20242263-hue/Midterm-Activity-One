@@ -1,23 +1,11 @@
-import { Link } from 'react-router-dom';
-import './Navigation.css'; // Optional: for styling the navbar
+import { Link } from "react-router-dom";
 
-const Navigation = () => {
+export default function Navigation() {
   return (
-    <nav className="navbar">
-      <ul>
-        <li>
-          {/* Use the Link component to navigate without a full page reload */}
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+    <nav style={{ padding: "1rem", background: "#f0f0f0" }}>
+      <Link to="/" style={{ margin: "0 1rem" }}>Home</Link>
+      <Link to="/students" style={{ margin: "0 1rem" }}>Students</Link>
+      <Link to="/about" style={{ margin: "0 1rem" }}>About</Link>
     </nav>
   );
-};
-
-export default Navigation;
+}
