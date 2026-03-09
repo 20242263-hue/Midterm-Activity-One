@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Navigation from "./components/Navigation.jsx";
+import Navigation from "./Components/Navigation.jsx";
 import Home from "./pages/Home.jsx";
-import Students from "./pages/Students.jsx";
+import Students from "./Pages/Students.jsx";
 import About from "./pages/About.jsx";
 
 function App() {
