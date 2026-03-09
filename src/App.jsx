@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import Students from "./Pages/Students.jsx";
 import About from "./pages/About.jsx";
 
+
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/students" element={<Students />} />
         <Route path="/about" element={<About />} />
+        <Route path="/students/:id" element={<StudentDetails />} />
       </Routes>
     </div>
   );
