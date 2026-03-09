@@ -1,10 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-);
+export default function Home() {
+  return (
+    <div>
+      <h2>Welcome to Student Dashboard</h2>
+      <p>This app demonstrates React Router, useState, and useEffect.</p>
+    </div>
+  );
+}
